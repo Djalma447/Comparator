@@ -1,7 +1,6 @@
 package application;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import entities.Product;
@@ -16,7 +15,7 @@ public class Program {
 		list.add(new Product("Iphone 11", 4999.99));
 		list.add(new Product("TV Samsung", 2999.50));
 		
-		Collections.sort(list);
+		list.sort(new MyComparator());
 		
 		for (Product p : list) {
 			System.out.println(p);
